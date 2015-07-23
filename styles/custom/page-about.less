@@ -1,0 +1,43 @@
+.page-about {
+  background: @color-primary;
+
+  header#main-header {
+    padding-bottom: 0px;
+
+    nav#main-navigation {
+      display: none;
+    }
+  }
+
+  section#posts {
+    article.post {
+      padding-bottom: 100px;
+
+      header.post-header {
+        h1.post-title {
+          text-align: center;
+          font-size: 70px !important;
+          font-weight: 600;
+          color: @color-text-deep-dark;
+        }
+      }
+
+      div.post-content {
+        color: @color-text-deep-dark;
+
+        a {
+          border-bottom: 2px @color-alternative solid;
+        }
+
+        p {
+          padding: .6em;
+          padding-bottom: .4em;
+        }
+      }
+    }
+  }
+
+  footer#main-footer {
+    display: none;
+  }
+}

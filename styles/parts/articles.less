@@ -1,0 +1,211 @@
+section#posts {
+  position: relative;
+  padding-bottom: 15px;
+
+  div#label {
+    /*
+    Current style looks ugly, It should get fixed
+    */
+    width: auto;
+    max-width: 100%;
+    display: block;
+    clear: both;
+    padding: .2em 0px .5em;
+    font-size: 26px;
+    z-index: 60;
+    text-align: right;
+    font-weight: bold;
+    direction:rtl;
+    position: relative;
+    color: #bbbbbb;
+    line-height: 1.6em;
+    top:0px;
+
+    a {
+      .linkEffect(@color-alternative, #FFFFFF);
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      color: @color-alternative;
+      box-sizing: border-box;
+    }
+
+    img {
+      height: 1em;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 22px !important;
+    }
+  }
+
+  article.post {
+    margin-bottom: 20px;
+    color: @color-text-normal;
+    header.post-header {
+      padding-bottom: 15px;
+
+      h1.post-title {
+        clear: both;
+        direction: rtl;
+        font-size: 22px;
+        position: relative;
+        z-index: 30;
+
+        a {
+          color: @color-text-deep-dark;
+          text-decoration: none;
+          line-height: 1.9em;
+          background: @color-primary;
+          transition: all .2s linear;
+
+          &:hover, &:active {
+            background: @color-primary-hover;
+          }
+        }
+      }
+
+      aside.post-meta {
+        direction: rtl;
+        clear: both;
+        font-size: 0.90em;
+        line-height: 2.4em;
+        height: 2.4em;
+        display: block;
+        overflow: hidden;
+        font-weight: 700;
+        color: @color-text-meta;
+        position: relative;
+        z-index: 20;
+
+        span.post-meta-holder {
+          padding: 6px 0px 4px;
+          background: @color-background-grey;
+
+          a.post-category {
+            color: inherit;
+            text-decoration: none;
+
+            &:hover, &:active {
+              color: #000000;
+              background: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    div.post-content {
+      h1, h2, h3, h4, h5, h6 {
+        direction: rtl;
+        padding-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 21px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      h4, h5, h6 {
+        font-size: 16px;
+      }
+
+      p {
+        direction: rtl;
+        margin-bottom: 15px;
+        font-size: 1.01em;
+        line-height: 1.8em;
+      }
+
+      blockquote {
+        direction: rtl;
+        font-size: 1.04;
+        line-height: 1.6em;
+        padding: 5px 20px;
+        margin: 20px 0px;
+        box-sizing: border-box;
+        border-right: 4px #efefef solid;
+      }
+
+      a {
+        color: @color-alternative;
+        .linkEffect(@color-alternative, #FFFFFF);
+      }
+
+      ul {
+        padding-right: 20px;
+        box-sizing: border-box;
+        direction: rtl;
+        list-style-type: none;
+        border-right: 4px #efefef solid;
+        margin-bottom: 15px;
+
+        ul {
+          margin-top: 10px;
+        }
+      }
+
+      div#table-of-contents {
+         padding-top: 5px;
+         padding-bottom: 5px;
+         margin-bottom: 0px;
+         box-sizing: border-box;
+         cursor: pointer;
+         transition: all .2s linear;
+
+         ul {
+            padding-right: 2px;
+            border-right: none !important;
+            font-weight: 400;
+            font-size: 15px;
+
+            ul {
+               padding-right: 15px;
+               margin-top: 0px;
+               margin-bottom: 0px;
+            }
+
+            li {
+               line-height: 2em !important;
+            }
+         }
+
+         h1 {
+            color: lighten(@color-text-normal, 25%);
+            padding-top: 5px;
+            padding-bottom: 45px;
+            box-sizing: border-box;
+            font-size: 22px;
+            line-height: 30px;
+            height: 40px;
+
+            span#toggle-toc {
+               background: url(../images/table-of-contents.svg) no-repeat right center;
+               background-size: 20px 20px;
+               display: block;
+               float: right;
+               height:30px;
+               width: 28px;
+            }
+         }
+      }
+
+      p, blockquote, ul {
+        code {
+          direction: ltr;
+          text-align: center;
+          display: inline-block;
+          padding: 0px 5px;
+          background: @color-background-grey;
+          font-family: consolas, menlo, monaco, monospace;
+          font-size: .85em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.fontFace(@name, @fileName, @weight) {
+  @font-face {
+    font-family: @name;
+    src: url("fonts/@{fileName}.eot");
+    src: url("fonts/@{fileName}.eot?#iefix") format("embedded-opentype"),
+    url("fonts/@{fileName}.woff") format("woff"),
+    url("fonts/@{fileName}.ttf") format("truetype"),
+    url("fonts/@{fileName}.svg") format("svg");
+    font-weight: @weight;
+  }
+}
+
+.linkEffect(@backgroundColor, @foregroundColor, @duration:.2s, @timingFunction:ease-out) {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  transition: all @duration linear;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: @duration;
+  transition-duration: @duration;
+
+  &:hover, &:active {
+    color: @foregroundColor;
+  }
+
+  &:hover:before, &:active:before, &:hover:focus, &:active:focus {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+
+  &:before {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: @backgroundColor;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+    -webkit-transition-duration: @duration;
+    transition-duration: @duration;
+    -webkit-transition-timing-function: @timingFunction;
+    transition-timing-function: @timingFunction;
+  }
+}
