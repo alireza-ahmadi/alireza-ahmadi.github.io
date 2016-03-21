@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>بلاگ علیرضا احمدی</title>
+    <title>بلاگ علیرضا احمدی | اصول Logging در سیستم‌های نرم‌افزاری</title>
 
     
     
@@ -15,30 +15,27 @@
     <link rel="author" href="https://plus.google.com/+AlirezaAhmadi94" />
 
     
-    <meta property="og:title" content="بلاگ علیرضا احمدی" />
-    <meta property="og:type" content="blog" />
-    <meta property="og:url" content="http://alireza.es/" />
+    <meta property="og:title" content="اصول Logging در سیستم‌های نرم‌افزاری" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://alireza.es/post/logging-best-practices/" />
     <meta property="og:image" content="http://alireza.es/images/social-banner-medium.png" />
     <meta property="og:description" content="نوشته‌های علیرضا احمدی درباره علایقش در حوزه‌های مختلف زندگی" />
     <meta property="fb:admins" content="1762002198" />
 
     
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:url" content="http://alireza.es/" />
-    <meta name="twitter:title" content="بلاگ علیرضا احمدی" />
+    <meta name="twitter:url" content="http://alireza.es/post/logging-best-practices/" />
+    <meta name="twitter:title" content="اصول Logging در سیستم‌های نرم‌افزاری" />
     <meta name="twitter:description" content="نوشته‌های علیرضا احمدی درباره علایقش در حوزه‌های مختلف زندگی" />
     <meta name="twitter:image" content="http://alireza.es/images/social-banner-medium.png" />
 
     
     
-        <link href="http://alireza.es/index.xml" rel="alternate" type="application/rss+xml" title="بلاگ علیرضا احمدی" />
-        <link href="http://alireza.es/index.xml" rel="feed" type="application/rss+xml" title="بلاگ علیرضا احمدی" />
-    
 
     <link rel="stylesheet" href="http://alireza.es/styles/style.css" />
 </head>
 
-<body>
+<body class="type-post">
     <div id="view">
         <header id="main-header">
             <div id="logo">
@@ -59,26 +56,44 @@
             </nav> 
         </header> 
 
-    <section id="posts">
-        <div class="container">
-            
-                <article class="post">
-                    <header class="post-header">
-                        <h1 class="post-title"><a href="http://alireza.es/post/logging-best-practices/">اصول Logging در سیستم‌های نرم‌افزاری</a></h1>
+<section id="posts" class="archive">
+    <div class="container">
+        <article class="post">
+            <header class="post-header">
+                <h1 class="post-title"><a href="http://alireza.es/post/logging-best-practices/">اصول Logging در سیستم‌های نرم‌افزاری</a></h1>
 
-                        <aside class="post-meta">
-                            <span class="post-meta-holder">
-                                <time datetime="2016-03-21 19:53:55 &#43;0430 IRDT" class="post-date">۲ فروردین‌ماه ۱۳۹۵</time> &bull;
-                                
-                                    <a class="post-category" href="http://alireza.es/topics/softwareDevelopment/">توسعه نرم‌افزار</a>
-                                
-                            </span>
-                        </aside>
-                    </header> 
-
-                    
-                        <div class="post-content">
+                <aside class="post-meta">
+                        <span class="post-meta-holder">
+                            <time datetime="2016-03-21 19:53:55 &#43;0430 IRDT" class="post-date">۲ فروردین‌ماه ۱۳۹۵</time> &bull;
                             
+                                <a class="post-category" href="http://alireza.es/topics/softwareDevelopment/">توسعه نرم‌افزار</a>
+                            
+                        </span>
+                </aside>
+            </header> 
+
+            <div class="post-content">
+                
+                    <div id="table-of-contents">
+                        <h1>فهرست <span id="toggle-toc"></span></h1>
+                        <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#خودتون-رو-به-logger-های-پیش-فرض-پلتفرم-محدود-نکنید:16d36c2eb6a07573e32bfc924ce28b1e">خودتون رو به Logger های پیش‌فرض پلتفرم محدود نکنید</a></li>
+<li><a href="#در-چند-درجه-مختلف-لاگ-کنید:16d36c2eb6a07573e32bfc924ce28b1e">در چند درجه مختلف لاگ کنید</a></li>
+<li><a href="#در-لاگ-کردن-افراط-و-تفریط-نکنید:16d36c2eb6a07573e32bfc924ce28b1e">در لاگ‌کردن افراط و تفریط نکنید</a></li>
+<li><a href="#اطلاعاتی-که-مورد-نیاز-است-رو-لاگ-کنید-نه-کمتر-و-نه-بیشتر:16d36c2eb6a07573e32bfc924ce28b1e">اطلاعاتی که مورد نیاز است رو لاگ کنید، نه کمتر و نه بیشتر</a></li>
+<li><a href="#لاگ-ها-باید-توسط-انسان-و-ماشین-قابل-خواندن-باشند:16d36c2eb6a07573e32bfc924ce28b1e">لاگ‌ها باید توسط انسان و ماشین قابل خواندن باشند</a></li>
+<li><a href="#لاگ-ها-تنها-روش-گرفتن-خروجی-از-سیستم-شما-نیستند:16d36c2eb6a07573e32bfc924ce28b1e">لاگ‌ها تنها روش گرفتن خروجی از سیستم شما نیستند</a></li>
+<li><a href="#یک-استراتژی-مناسب-برای-آرشیو-کردن-لاگ-هاتون-داشته-باشید:16d36c2eb6a07573e32bfc924ce28b1e">یک استراتژی مناسب برای آرشیو کردن لاگ‌هاتون داشته باشید</a></li>
+</ul></li>
+</ul>
+</nav>
+                    </div> 
+                
+
+                
 
 <p>تقریبا اکثر توسعه‌دهندگان بر روی این که Logging یکی از مهم‌ترین ابزارهای یک توسعه‌دهنده در پروژه‌های نرم‌افزاری است اتفاق نظر دارند ولی متاسفانه خیلی از توسعه‌دهندگان به خوبی از این ابزار ساده ولی قدرتمندی که در اختیار دارند استفاده نمی‌کنند. در حقیقت لاگ‌ها نحوه ارتباط توسعه‌دهنده با سرویسی هستند که طراحی می‌کنه پس یک استراتژی Logging مناسب می‌تونه توسعه نرم‌افزار شما رو سریع‌تر کنه، به پیدا کردن سریع‌تر باگ‌ها در لول پروداکشن کمک کنه و نگه‌داری محصول رو براتون ساده کنه. من سعی کردم برخی اصولی که خودم به طور معمول رعایت می‌کنم (و یا مهم هستند و من از روی تنبلی رعایت نمی‌کنم :)) رو در ادامه مطلب بیارم. اصول و تکنیک‌هایی که در ادامه نوشته شده‌اند به صورت کلی در پروژه‌های نرم‌افزاری در پلتفرم‌های مختلف قابل استفاده هستند ولی تمرکز اصلی مطلب بر روی پروژه‌های بک اند وب است.</p>
 
@@ -145,48 +160,12 @@ fmt.Print('Hello World!') // Go
 
 <p>امیدوارم مواردی که توضیح دادم به پروسه توسعه نرم‌افزارهاتون کمک کنه.</p>
 
-                        </div> 
-                    
-                </article> 
-            
-                <article class="post">
-                    <header class="post-header">
-                        <h1 class="post-title"><a href="http://alireza.es/post/learn-android-programming/">روش پیشنهادی من برای یادگیری برنامه‌نویسی اندروید</a></h1>
+            </div>
+        </article> 
+    </div>
 
-                        <aside class="post-meta">
-                            <span class="post-meta-holder">
-                                <time datetime="2014-09-01 14:32:00 &#43;0430 IRDT" class="post-date">۱۰ شهریورماه ۱۳۹۳</time> &bull;
-                                
-                                    <a class="post-category" href="http://alireza.es/topics/android/">اندروید</a>
-                                
-                            </span>
-                        </aside>
-                    </header> 
-
-                    
-                </article> 
-            
-                <article class="post">
-                    <header class="post-header">
-                        <h1 class="post-title"><a href="http://alireza.es/post/webdevelopment-toolchain/">ابزارهایی که من برای توسعه وب استفاده می کنم</a></h1>
-
-                        <aside class="post-meta">
-                            <span class="post-meta-holder">
-                                <time datetime="2014-07-08 15:17:00 &#43;0430 IRDT" class="post-date">۱۷ تیرماه ۱۳۹۳</time> &bull;
-                                
-                                    <a class="post-category" href="http://alireza.es/topics/webdevelopment/">توسعه وب</a>
-                                
-                            </span>
-                        </aside>
-                    </header> 
-
-                    
-                </article> 
-            
-
-            
-        </div>
-    </section> 
+    
+</section> 
 
 		<footer id="main-footer">
 			<p>لطفا مطالب رو بدون ذکر منبع کپی نکنید. <span>قدرت گرفته از <a href="http://gohugo.io">هوگو</a></span></p>
