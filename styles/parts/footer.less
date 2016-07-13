@@ -1,103 +1,62 @@
-// Work in progress
 footer#main-footer {
-  background: #FFFFFF;
-  border-top: 1px #f7f7f7 solid;
-  padding: 90px 0px 80px;
+  background: #e0dddb;
+  padding: 2em 0px 2em;
   position: relative;
-  font-size: 14px;
   min-height: 100px;
   margin-top: 10px;
   box-sizing: border-box;
   line-height: 40px;
   color: @color-text-meta;
+  text-align: right;
 
 
   p {
+    text-align: right;
+    font-size: 1.25em;
+    line-height: 1.9em;
+    padding-top: 1.2em;
+    padding-bottom: 1.4em;
+    opacity: 0.9;
     direction: rtl;
-    text-align: center;
-    padding: 0px 20px;
 
     a {
-      .linkEffect(@color-alternative, #FFFFFF);
-      display: inline-block;
-      position: relative;
       text-decoration: none;
-      color: @color-alternative;
-      box-sizing: border-box;
-      padding: 0px 6px;
-      line-height: 2em;
-
+      color: @color-primary;
+      font-weight: bold;
+      display: inline-block;
+      .linkEffect(@color-primary, @color-white);
     }
 
     img {
-      height: 10px;
+      width: 1.8em;
+      height: 1.8em;
       vertical-align: middle;
-      display: inline-block;
-      padding: 0px 15px;
-      transform: scale(1);
-      transition: transform .2s ease-out;
-
-      &:hover, &:active {
-        transform: scale(1.32);
+      
+      &.avatar {
+        margin-left: 0.3em;
+        margin-right: 0.2em;
+        border-radius: 30px;
       }
     }
+
+    &.copyright {
+      border-top: 1px rgba(0,0,0,0.1) solid;
+    }
+  }
+  
+  a#about-link {
+    width: 9em;
+    text-align: center;
+    color: @color-text-dark;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 40px;
+    font-size: 1.2em;
+    line-height: 2.8em;
+    margin: 1.8em auto 0;
+    background: @color-alternative;
+    clear: both;
+    display: none;
   }
 
-  @media (max-width: 480px) {
-    padding: 70px 0px 70px;
-  }
 }
-
-/*
-   *****************************
-   Removed this part temporarily, Trying to make a perfect footer but it takes time
-   *****************************
-
-div#promotion {
-	width: 100%;
-	height: 100vh;
-	position: fixed;
-	z-index: 20;
-	font: "Nexa";
-	font-weight: bold;
-	color: #FFFFFF;
-	font-size: 28px;
-	text-align: center;
-	background: lighten(#55acee, 30%);
-	-webkit-background-size: cover;
-	background-size: cover;
-	left: 0px;
-	top: 0px;
-
-	div#promotion-container {
-		width: 100%;
-		height: 100%;
-		position: relative;
-      text-align: center;
-
-      img{
-         display: block;
-         height: 180vh;
-         position: absolute;
-         left: 50%;
-         transform: translateX(-50%);
-         top: -40vh;
-         margin-left: auto;
-         margin-right: auto;
-      }
-      p {
-         z-index: 50;
-         height: 10vh;
-         line-height: 40px;
-         padding-top: 45vh;
-         padding-bottom: 45vh;
-      	color: lighten(#55acee, 35%);
-         position: relative;
-
-         span {
-            font-size: 40px;
-         }
-      }
-	}
-}
-*/
