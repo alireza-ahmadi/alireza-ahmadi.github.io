@@ -168,22 +168,41 @@ section#posts {
         }
       }
 
-      div.deprecated {
-        background: @color-background-deprecated;
+      del {
+        opacity: 0.4;
+        background:#F2B4C0;
+      }
+
+      div.deprecated, div.description {
         box-sizing: border-box;
         border-radius: 3px;
-        padding: 15px;
-        margin-bottom: 20px;
+        padding: 15px 15px 20px 15px;
+        margin-bottom: 25px;
 
         h6 {
           font-weight: bold;
-          color: @color-primary;
           font-size: 30px;
         }
 
         p {
           margin: 0;
-          font-size: 16px;
+          font-size: 17px;
+        }
+
+        &.deprecated {
+          background: @color-background-deprecated;
+          
+          h6 {
+            color: @color-primary;
+          }
+        }
+
+        &.description {
+          background: @color-background-description;
+
+          h6 {
+            color: @color-text-description;
+          }
         }
       }
 
