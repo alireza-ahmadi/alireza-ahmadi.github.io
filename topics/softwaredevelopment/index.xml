@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Softwaredevelopment on بلاگ علیرضا احمدی</title>
-    <link>http://alireza.es/topics/softwaredevelopment/</link>
-    <description>Recent content in Softwaredevelopment on بلاگ علیرضا احمدی</description>
+    <title>بلاگ علیرضا احمدی</title>
+    <link>http://alireza.es/topics/softwaredevelopment/index.xml</link>
+    <description>Recent content on بلاگ علیرضا احمدی</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Mar 2016 19:53:55 +0430</lastBuildDate>
     <atom:link href="http://alireza.es/topics/softwaredevelopment/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
