@@ -92,7 +92,7 @@
 
 &lt;p&gt;تقریبا اکثر پلتفرم‌ها و زبان‌های برنامه‌نویسی یک کلاس، تابع، پکیج و یا ابزار مشابهی برای چاپ کردن  در اختیار توسعه‌دهندگان می‌گذارند، به چند تا مثال تو زبون‌های مختلف توجه کنید&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;console.log(&#39;Hello World!&#39;); // Javascript
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;console.log(&#39;Hello World!&#39;); // Javascript
 print &#39;Hello World!&#39; # Python
 fmt.Print(&#39;Hello World!&#39;) // Go
 &lt;/code&gt;&lt;/pre&gt;
