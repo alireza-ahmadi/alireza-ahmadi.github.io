@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>بلاگ علیرضا احمدی</title>
-    <link>http://alireza.es/topics/softwaredevelopment/index.xml</link>
+    <link>https://alireza.es/topics/softwaredevelopment/index.xml</link>
     <description>Recent content on بلاگ علیرضا احمدی</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://alireza.es/topics/softwaredevelopment/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://alireza.es/topics/softwaredevelopment/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>اصول Logging  در پروژه‌های نرم‌افزاری</title>
-      <link>http://alireza.es/post/logging-best-practices/</link>
+      <link>https://alireza.es/post/logging-best-practices/</link>
       <pubDate>Mon, 21 Mar 2016 19:53:55 +0430</pubDate>
       
-      <guid>http://alireza.es/post/logging-best-practices/</guid>
+      <guid>https://alireza.es/post/logging-best-practices/</guid>
       <description>
 
 &lt;p&gt;تقریبا اکثر توسعه‌دهندگان بر روی این که Logging یکی از مهم‌ترین ابزارهای یک توسعه‌دهنده در پروژه‌های نرم‌افزاری است اتفاق نظر دارند ولی متاسفانه خیلی از توسعه‌دهندگان به خوبی از این ابزار ساده ولی قدرتمندی که در اختیار دارند استفاده نمی‌کنند. در حقیقت لاگ‌ها نحوه ارتباط توسعه‌دهنده با سرویسی هستند که طراحی می‌کنه پس یک استراتژی Logging مناسب می‌تونه توسعه نرم‌افزار شما رو سریع‌تر کنه، به پیدا کردن سریع‌تر باگ‌ها در لول پروداکشن کمک کنه و نگه‌داری محصول رو براتون ساده کنه. من سعی کردم برخی اصولی که خودم به طور معمول رعایت می‌کنم (و یا مهم هستند و من از روی تنبلی رعایت نمی‌کنم :)) رو در ادامه مطلب بیارم. اصول و تکنیک‌هایی که در ادامه نوشته شده‌اند به صورت کلی در پروژه‌های نرم‌افزاری در پلتفرم‌های مختلف قابل استفاده هستند ولی تمرکز اصلی مطلب بر روی پروژه‌های بک اند وب است.&lt;/p&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>بلاگ علیرضا احمدی</title>
-    <link>http://alireza.es/index.xml</link>
+    <link>https://alireza.es/index.xml</link>
     <description>Recent content on بلاگ علیرضا احمدی</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Nov 2016 19:49:25 +0330</lastBuildDate>
-    <atom:link href="http://alireza.es/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://alireza.es/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>بررسی کتاب: تست مامان</title>
-      <link>http://alireza.es/post/book-the-mom-test/</link>
+      <link>https://alireza.es/post/book-the-mom-test/</link>
       <pubDate>Sat, 12 Nov 2016 19:49:25 +0330</pubDate>
       
-      <guid>http://alireza.es/post/book-the-mom-test/</guid>
+      <guid>https://alireza.es/post/book-the-mom-test/</guid>
       <description>&lt;p&gt;چند روز پیش توی توییتر تعدادی توییت مربوط به معرفی نسخه فارسی کتابی رو دیدم که قبلا بارها اسم نسخه انگلیسیش رو شنیده بودم ولی هیچ‌وقت همت نکرده بودم که
 مطالعه‌اش کنم: کتاب تست مامان. با توجه به این که سال‌هاست اسم مدیر تیم ترجمه کتاب رو می‌شنوم و به نوعی بهش اعتماد دارم لینک موجود توی یکی از توییت‌ها رو باز
 کردم و یه نگاهی به &lt;a href=&#34;http://www.pingon.io/books/mom-test/fa&#34;&gt;لندینگ‌پیج&lt;/a&gt; کتاب انداختم. توی لندینگ پیج توضیحات خوبی از کتاب به همراه یک فصل از کتاب
@@ -29,7 +29,7 @@
 از معدود دفعاتی بود که داشتم یه کتاب ترجمه‌شده رو می‌خوندم و از خوندنش لذت می‌بردم، کتاب فوق‌العاده روون و با معدود اشتباهات نگارشی و املایی ترجمه شده بود
 و جای هیچ‌گونه اعتراضی رو باقی نمی‌گذاشت.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://alireza.es/images/book-the-mom-test-cover.png&#34; alt=&#34;کتاب تست مامان&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://alireza.es/images/book-the-mom-test-cover.png&#34; alt=&#34;کتاب تست مامان&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;من آدم درون‌گرایی(شاید حتی جامعه‌گریز) هستم و حرف زدن با دیگران نه تنها برام خوش‌آیند نیست بلکه بعضی اوقات آزاردهنده هم هست در نتیجه توی این چند سالی که مشغول کارکردن هستم، برقراری ارتباط با بقیه همیشه بزرگ‌ترین معضلم بوده.
 این مسئله تو حالت عادی، وقتی یه موقعیت کارمندی دارید یا تعداد افرادی که باهاشون در ارتباط هستید محدوده مشکل خاصی نیست چون در اثر تجربه می‌تونید یاد بگیرید
@@ -80,10 +80,10 @@
     
     <item>
       <title>اصول Logging  در پروژه‌های نرم‌افزاری</title>
-      <link>http://alireza.es/post/logging-best-practices/</link>
+      <link>https://alireza.es/post/logging-best-practices/</link>
       <pubDate>Mon, 21 Mar 2016 19:53:55 +0430</pubDate>
       
-      <guid>http://alireza.es/post/logging-best-practices/</guid>
+      <guid>https://alireza.es/post/logging-best-practices/</guid>
       <description>
 
 &lt;p&gt;تقریبا اکثر توسعه‌دهندگان بر روی این که Logging یکی از مهم‌ترین ابزارهای یک توسعه‌دهنده در پروژه‌های نرم‌افزاری است اتفاق نظر دارند ولی متاسفانه خیلی از توسعه‌دهندگان به خوبی از این ابزار ساده ولی قدرتمندی که در اختیار دارند استفاده نمی‌کنند. در حقیقت لاگ‌ها نحوه ارتباط توسعه‌دهنده با سرویسی هستند که طراحی می‌کنه پس یک استراتژی Logging مناسب می‌تونه توسعه نرم‌افزار شما رو سریع‌تر کنه، به پیدا کردن سریع‌تر باگ‌ها در لول پروداکشن کمک کنه و نگه‌داری محصول رو براتون ساده کنه. من سعی کردم برخی اصولی که خودم به طور معمول رعایت می‌کنم (و یا مهم هستند و من از روی تنبلی رعایت نمی‌کنم :)) رو در ادامه مطلب بیارم. اصول و تکنیک‌هایی که در ادامه نوشته شده‌اند به صورت کلی در پروژه‌های نرم‌افزاری در پلتفرم‌های مختلف قابل استفاده هستند ولی تمرکز اصلی مطلب بر روی پروژه‌های بک اند وب است.&lt;/p&gt;
@@ -155,10 +155,10 @@ fmt.Print(&#39;Hello World!&#39;) // Go
     
     <item>
       <title>روش پیشنهادی من برای یادگیری برنامه‌نویسی اندروید</title>
-      <link>http://alireza.es/post/learn-android-programming/</link>
+      <link>https://alireza.es/post/learn-android-programming/</link>
       <pubDate>Mon, 01 Sep 2014 14:32:00 +0430</pubDate>
       
-      <guid>http://alireza.es/post/learn-android-programming/</guid>
+      <guid>https://alireza.es/post/learn-android-programming/</guid>
       <description>&lt;div class=&#34;deprecated&#34;&gt;
 	&lt;h6&gt;گذرزمان ...&lt;/h6&gt;
 	&lt;p&gt;با توجه به گذشتن مدت زمان نسبتا زیادی از نگارش این مطلب، علی‌رغم مفید بودن بخش قابل توجهی از موارد ذکر شده، در حال حاضر این مطلب به عنوان روش پیشنهادی من برای
@@ -201,10 +201,10 @@ fmt.Print(&#39;Hello World!&#39;) // Go
     
     <item>
       <title>ابزارهایی که من برای توسعه وب استفاده می کنم</title>
-      <link>http://alireza.es/post/webdevelopment-toolchain/</link>
+      <link>https://alireza.es/post/webdevelopment-toolchain/</link>
       <pubDate>Tue, 08 Jul 2014 15:17:00 +0430</pubDate>
       
-      <guid>http://alireza.es/post/webdevelopment-toolchain/</guid>
+      <guid>https://alireza.es/post/webdevelopment-toolchain/</guid>
       <description>
 
 &lt;div class=&#34;description&#34;&gt;
@@ -291,15 +291,15 @@ fmt.Print(&#39;Hello World!&#39;) // Go
     
     <item>
       <title>درباره‌من</title>
-      <link>http://alireza.es/page/about/</link>
+      <link>https://alireza.es/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://alireza.es/page/about/</guid>
+      <guid>https://alireza.es/page/about/</guid>
       <description>&lt;p&gt;من علیرضا احمدی هستم، یک توسعه‌دهنده نرم‌افزار که به برنامه‌نویسی، اقتصاد، سیاست و غذا عشق می‌ورزه. به صورت کلی آرامش رو به هیاهو، سکوت رو به صحبت‌کردن، تنهایی رو به بودن در جمع، برد رو به باخت، ریسک رو به احتیاط، صبر رو به عجله، تغییر رو به سکون، مطالعه رو به رفتن‌به‌پارک، تایپ‌کردن رو به نوشتن‌با‌ خودکار، چت‌متنی رو به تماس‌تلفنی، موسیقی‌سنتی رو به موسیقی‌مدرن، سادگی رو به پیچیدگی، برج رو به خونه‌باغ، مرکز‌شهر رو به حومه‌شهر، حومه‌شهر رو به روستا، ببر رو به خرگوش، برنامه‌نویسی وب رو به برنامه‌نویسی موبایل، توسعه بک‌اند رو به فرانت‌اند، توییتر رو به فیس‌بوک، اتم رو به سابلایم، فدورا رو به اوبونتو، گنوم رو به KDE، گالپ رو به گرانت، چلسی رو به بارسلونا، موکا رو به امریکانو، ترشی رو به شیرینی و آینده رو به گذشته ترجیح میدم.&lt;/p&gt;
 
 &lt;p&gt;برنامه‌نویسی رو از حدود ۹ سال پیش و با VB.NET شروع کردم، توی چند ماه از برنامه‌نویسی دسکتاپ به سمت وب رفتم و از اون زمان تا به حال اصلی‌ترین حوزه‌ی فعالیتم وب بوده. توی چهار سال اخیر و بعد از اتمام دبیرستان، علاوه بر تحصیل در دانشگاه آزاد تهران شمال در رشته‌ای که بهش مهندسی نرم‌افزار گفته میشه توی چند تا شرکت توی موقعیت‌های شغلی مختلف من جمله فرانت‌اند دولوپر/ بک‌اند دولوپر/ مدیر توسعه اپلیکیشن‌های تلفن‌همراه و &amp;hellip; مشغول بودم، علاوه بر این به صورت موازی در گندم، که حدود دو سال پیش با دو نفر از بهترین دوستانم تاسیسش کردیم، فعالیت می‌کردم.&lt;/p&gt;
 
-&lt;p&gt;خوشحال میشم که من رو در &lt;a href=&#34;اhttps://twitter.com/alireza94&#34;&gt;توییتر&lt;/a&gt; فالو کنید. در صورتی که تمایل دارید در مورد حوزه فعالیت و سوابق کاری من بیشتر بدونید، بهترین روش مراجعه به پروفایل‌های &lt;a href=&#34;https://ir.linkedin.com/in/alirezaahmadi&#34;&gt;لینکداین&lt;/a&gt; یا &lt;a href=&#34;https://github.com/alireza-ahmadi/&#34;&gt;گیت‌هاب&lt;/a&gt; من هستش. در صورتی هم که به هر نحوی می تونستم بهتون کمکی بکنم یا پیشنهادی در مورد خودم و یا وبلاگم داشتید می‌تونید به راحتی به من &lt;a href=&#34;mailto:info@alireza.es&#34;&gt;ایمیل&lt;/a&gt; بزنید.&lt;/p&gt;
+&lt;p&gt;خوشحال میشم که من رو در &lt;a href=&#34;https://twitter.com/alireza94&#34;&gt;توییتر&lt;/a&gt; فالو کنید. در صورتی که تمایل دارید در مورد حوزه فعالیت و سوابق کاری من بیشتر بدونید، بهترین روش مراجعه به پروفایل‌های &lt;a href=&#34;https://ir.linkedin.com/in/alirezaahmadi&#34;&gt;لینکداین&lt;/a&gt; یا &lt;a href=&#34;https://github.com/alireza-ahmadi/&#34;&gt;گیت‌هاب&lt;/a&gt; من هستش. در صورتی هم که به هر نحوی می تونستم بهتون کمکی بکنم یا پیشنهادی در مورد خودم و یا وبلاگم داشتید می‌تونید به راحتی به من &lt;a href=&#34;mailto:info@alireza.es&#34;&gt;ایمیل&lt;/a&gt; بزنید.&lt;/p&gt;
 </description>
     </item>
     

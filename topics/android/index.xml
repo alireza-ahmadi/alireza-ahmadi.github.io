@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>بلاگ علیرضا احمدی</title>
-    <link>http://alireza.es/topics/android/index.xml</link>
+    <link>https://alireza.es/topics/android/index.xml</link>
     <description>Recent content on بلاگ علیرضا احمدی</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://alireza.es/topics/android/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://alireza.es/topics/android/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>روش پیشنهادی من برای یادگیری برنامه‌نویسی اندروید</title>
-      <link>http://alireza.es/post/learn-android-programming/</link>
+      <link>https://alireza.es/post/learn-android-programming/</link>
       <pubDate>Mon, 01 Sep 2014 14:32:00 +0430</pubDate>
       
-      <guid>http://alireza.es/post/learn-android-programming/</guid>
+      <guid>https://alireza.es/post/learn-android-programming/</guid>
       <description>&lt;div class=&#34;deprecated&#34;&gt;
 	&lt;h6&gt;گذرزمان ...&lt;/h6&gt;
 	&lt;p&gt;با توجه به گذشتن مدت زمان نسبتا زیادی از نگارش این مطلب، علی‌رغم مفید بودن بخش قابل توجهی از موارد ذکر شده، در حال حاضر این مطلب به عنوان روش پیشنهادی من برای
