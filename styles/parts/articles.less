@@ -180,22 +180,24 @@ section#posts {
         background:#F2B4C0;
       }
 
-      div.deprecated, div.description {
+      div.highlight-box {
         box-sizing: border-box;
         border-radius: 3px;
         padding: 1em 1em 1.25em 1em;
         margin-bottom: 1.6em;
+        background: @color-white;
 
         h6 {
           font-weight: bold;
           font-size: 1.875em;
+          color: @color-text-dark;
         }
 
         p {
           margin: 0;
         }
 
-        &.deprecated {
+        &.highlight-box-red {
           background: @color-background-deprecated;
           
           h6 {
@@ -203,11 +205,54 @@ section#posts {
           }
         }
 
-        &.description {
+        &.highlight-box-green {
           background: @color-background-description;
 
           h6 {
             color: @color-text-description;
+          }
+        }
+      }
+
+      div.related-links {
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 1em .8em 0em .8em;
+        margin-bottom: .5em;
+        margin-top: 2.5em;
+        border: 4px @color-background-grey solid;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+          content: " ";
+          width: 10em;
+          height: 10em;
+          position: absolute;
+          left: -1em;
+          top: -1em;
+          background: url(../images/icon-link.svg) no-repeat 0 0;
+          background-size: 10em 10em;
+        }
+
+        h6 {
+          font-weight: bold;
+          font-size: 1.6em;
+          color: @color-text-dark;
+          padding-right: 1em;
+        }
+
+        p {
+          margin: 0;
+        }
+
+        ul {
+          border-right: none;
+          font-size: 1.2em;
+
+          li {
+            margin-top: .4em;
+            margin-bottom: .4em;
           }
         }
       }

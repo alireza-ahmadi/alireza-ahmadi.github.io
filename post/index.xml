@@ -75,6 +75,16 @@
 &lt;blockquote&gt;
 &lt;p&gt;اگه دیدن که خوب نیست موقع صحبت‌کردن، کاغذ به همراه داشته باشین، بذارید مکالمه‌تون تموم بشه بعدش سریع برین یه گوشه‌ای و صحبت‌ها رو یادداشت کنین. من از این روش توی کنفرانس‌ها استفاده می‌کنم.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;div class=&#34;related-links&#34;&gt;
+	&lt;h6&gt;پیوندهای بیرونی مرتبط&lt;/h6&gt;
+	&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://manili.org/?p=542&#34;&gt;نقدی بر کتاب “تست مامان”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ifattahi.ir/books/book/%D8%AA%D8%B3%D8%AA-%D9%85%D8%A7%D9%85%D8%A7%D9%86/&#34;&gt;تست مامان&lt;/a&gt; در قفسه کتاب&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
 </description>
     </item>
     
@@ -159,8 +169,8 @@ fmt.Print(&#39;Hello World!&#39;) // Go
       <pubDate>Mon, 01 Sep 2014 14:32:00 +0430</pubDate>
       
       <guid>https://alireza.es/post/learn-android-programming/</guid>
-      <description>&lt;div class=&#34;deprecated&#34;&gt;
-	&lt;h6&gt;گذرزمان ...&lt;/h6&gt;
+      <description>&lt;div class=&#34;highlight-box highlight-box-red&#34;&gt;
+	&lt;h6&gt;گذر زمان ...&lt;/h6&gt;
 	&lt;p&gt;با توجه به گذشتن مدت زمان نسبتا زیادی از نگارش این مطلب، علی‌رغم مفید بودن بخش قابل توجهی از موارد ذکر شده، در حال حاضر این مطلب به عنوان روش پیشنهادی من برای
 یادگیری اندروید توصیه نمی‌شود. پیشنهاد می‌کنم تا پیش از بروزرسانی این مطلب، از منابع جدیدتر مثل &lt;a href=&#34;http://dostibacode.ir/android&#34;&gt;ویدئوی کمپین دوستی با کد&lt;/a&gt;
 یا &lt;a href=&#34;https://cloudrail.com/best-resources-to-learn-android-programming/&#34;&gt;این مطلب&lt;/a&gt; که به زبان انگلیسی نوشته شده استفاده کنید.&lt;/p&gt;
@@ -207,7 +217,7 @@ fmt.Print(&#39;Hello World!&#39;) // Go
       <guid>https://alireza.es/post/webdevelopment-toolchain/</guid>
       <description>
 
-&lt;div class=&#34;description&#34;&gt;
+&lt;div class=&#34;highlight-box highlight-box-green&#34;&gt;
 	&lt;h6&gt;توضیحات&lt;/h6&gt;
 	&lt;p&gt;این مطلب برای اولین بار در سال ۹۳ نوشته شد و در آبان‌ماه سال ۹۵ بازنویسی شده. بخش‌هایی از مطلب که خط خورده هستند در واقع مواردی هستند که
 دو سال پیش توسط من برای توسعه وب مورد استفاده قرار می‌گرفتند ولی در حال حاضر دیگه به کار گرفته نمی‌شوند&lt;/p&gt;
