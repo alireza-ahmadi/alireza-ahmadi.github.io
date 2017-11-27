@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://alireza.es/post/consciouse-decision-making/</loc>
+    <lastmod>2017-11-27T10:46:24+03:30</lastmod>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://alireza.es/post/book-the-mom-test/</loc>
     <lastmod>2016-11-12T19:49:25+03:30</lastmod>
     <priority>0.5</priority>
@@ -38,13 +44,19 @@
   </url>
   
   <url>
+    <loc>https://alireza.es/topics/business/</loc>
+    <lastmod>2017-11-27T10:46:24+03:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://alireza.es/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://alireza.es/post/</loc>
-    <lastmod>2016-11-12T19:49:25+03:30</lastmod>
+    <lastmod>2017-11-27T10:46:24+03:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -67,7 +79,7 @@
   
   <url>
     <loc>https://alireza.es/</loc>
-    <lastmod>2016-11-12T19:49:25+03:30</lastmod>
+    <lastmod>2017-11-27T10:46:24+03:30</lastmod>
     <priority>0</priority>
   </url>
   
