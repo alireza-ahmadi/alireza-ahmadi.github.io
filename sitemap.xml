@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://alireza.es/post/conscious-decision-making/</loc>
@@ -68,6 +69,7 @@
   
   <url>
     <loc>https://alireza.es/topics/</loc>
+    <lastmod>2014-09-01T14:32:00+04:30</lastmod>
     <priority>0</priority>
   </url>
   

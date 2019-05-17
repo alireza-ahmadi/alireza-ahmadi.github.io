@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Topics on بلاگ علیرضا احمدی</title>
+    <link>https://alireza.es/topics/</link>
+    <description>Recent content in Topics on بلاگ علیرضا احمدی</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Sep 2014 14:32:00 +0430</lastBuildDate>
+    
+	<atom:link href="https://alireza.es/topics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android</title>
+      <link>https://alireza.es/topics/android/</link>
+      <pubDate>Mon, 01 Sep 2014 14:32:00 +0430</pubDate>
+      
+      <guid>https://alireza.es/topics/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bookreview</title>
+      <link>https://alireza.es/topics/bookreview/</link>
+      <pubDate>Sat, 12 Nov 2016 19:49:25 +0330</pubDate>
+      
+      <guid>https://alireza.es/topics/bookreview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Business</title>
+      <link>https://alireza.es/topics/business/</link>
+      <pubDate>Mon, 27 Nov 2017 10:46:24 +0330</pubDate>
+      
+      <guid>https://alireza.es/topics/business/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Softwaredevelopment</title>
+      <link>https://alireza.es/topics/softwaredevelopment/</link>
+      <pubDate>Mon, 21 Mar 2016 19:53:55 +0430</pubDate>
+      
+      <guid>https://alireza.es/topics/softwaredevelopment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webdevelopment</title>
+      <link>https://alireza.es/topics/webdevelopment/</link>
+      <pubDate>Tue, 08 Jul 2014 15:17:00 +0430</pubDate>
+      
+      <guid>https://alireza.es/topics/webdevelopment/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
