@@ -1,6 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://alireza.es/</loc>
+    <lastmod>2017-11-27T10:46:24+03:30</lastmod>
+    <priority>0.5</priority>
+  </url>
   
   <url>
     <loc>https://alireza.es/post/conscious-decision-making/</loc>
@@ -30,59 +36,6 @@
     <loc>https://alireza.es/post/webdevelopment-toolchain/</loc>
     <lastmod>2014-07-08T15:17:00+04:30</lastmod>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://alireza.es/topics/android/</loc>
-    <lastmod>2014-09-01T14:32:00+04:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alireza.es/topics/bookreview/</loc>
-    <lastmod>2016-11-12T19:49:25+03:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alireza.es/topics/business/</loc>
-    <lastmod>2017-11-27T10:46:24+03:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alireza.es/page/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alireza.es/post/</loc>
-    <lastmod>2017-11-27T10:46:24+03:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alireza.es/topics/softwaredevelopment/</loc>
-    <lastmod>2016-03-21T19:53:55+04:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alireza.es/topics/</loc>
-    <lastmod>2014-09-01T14:32:00+04:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alireza.es/topics/webdevelopment/</loc>
-    <lastmod>2014-07-08T15:17:00+04:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alireza.es/</loc>
-    <lastmod>2017-11-27T10:46:24+03:30</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
