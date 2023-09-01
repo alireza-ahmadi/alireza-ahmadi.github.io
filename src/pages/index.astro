@@ -1,5 +1,4 @@
 ---
-import '@fontsource/spline-sans-mono/400.css';
 import '@fontsource/spline-sans-mono/500.css';
 
 const links = [
@@ -30,7 +29,10 @@ const links = [
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>Alireza Ahmadi</title>
     <!-- Favicon -->
@@ -74,7 +76,7 @@ const links = [
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#000000" />
   </head>
-  <body class="bg-black text-white">
+  <body class="bg-black text-white selection:bg-white selection:text-black">
     <main class="font-mono w-full box-border p-8 sm:max-w-xl md:p-16">
       <section>
         <h1 class="font-medium text-normal mb-10 sm:text-lg">Alireza Ahmadi</h1>
