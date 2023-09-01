@@ -1,0 +1,101 @@
+---
+import '@fontsource/spline-sans-mono/400.css';
+import '@fontsource/spline-sans-mono/500.css';
+
+const links = [
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/alirezaahmadi/',
+  },
+  {
+    name: 'X, formerly Twitter',
+    url: 'https://twitter.com/alireza94',
+  },
+  {
+    name: 'GitHub',
+    url: 'https://github.com/alireza-ahmadi',
+  },
+  {
+    name: 'StackOverflow',
+    url: 'https://stackoverflow.com/users/2503246/alireza-ahmadi',
+  },
+  {
+    name: 'Email',
+    url: 'mailto:me@alireza.es',
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Alireza Ahmadi</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <body class="bg-black text-white">
+    <main class="font-mono w-full box-border p-8 sm:max-w-xl md:p-16">
+      <section>
+        <h1 class="font-medium text-normal mb-10 sm:text-lg">Alireza Ahmadi</h1>
+        <p
+          class="text-normal font-medium leading-loose sm:leading-loose sm:text-lg mb-10 [text-wrap:balance]"
+        >
+          I'm a consultant with software engineering background. I help
+          companies leverage the tech to achieve their primary objectives.
+        </p>
+        <ul class="text-normal font-medium opacity-70">
+          {
+            links.map(({ name, url }) => (
+              <li class="mb-6 sm:mb-4">
+                <a class="border-b-2 pb-1" href={url}>
+                  {name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
