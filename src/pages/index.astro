@@ -1,5 +1,5 @@
 ---
-import '@fontsource/spline-sans-mono/500.css';
+import '@fontsource/space-mono/400.css';
 
 const links = [
   {
@@ -8,7 +8,7 @@ const links = [
   },
   {
     name: 'X, formerly Twitter',
-    url: 'https://twitter.com/alireza94',
+    url: 'https://x.com/alireza94',
   },
   {
     name: 'GitHub',
@@ -92,16 +92,18 @@ const links = [
     <meta property="og:url" content="https://alireza.es" />
   </head>
   <body class="bg-black text-white selection:bg-white selection:text-black">
-    <main class="font-mono w-full box-border p-8 sm:max-w-xl md:p-16">
+    <main
+      class="font-mono w-full box-border p-8 sm:max-w-xl md:p-16 [font-variant-ligatures:none]"
+    >
       <section>
-        <h1 class="font-medium text-normal mb-10 sm:text-lg">Alireza Ahmadi</h1>
+        <h1 class="font-normal text-normal mb-10 sm:text-lg">Alireza Ahmadi</h1>
         <p
-          class="text-normal font-medium leading-loose sm:leading-loose sm:text-lg mb-10 [text-wrap:balance]"
+          class="text-normal font-normal leading-loose sm:leading-loose sm:text-lg mb-10 [text-wrap:balance]"
         >
           I'm a consultant with software engineering background. I help
           companies leverage the tech to achieve their primary objectives.
         </p>
-        <ul class="text-normal font-medium opacity-70">
+        <ul class="text-normal font-normal opacity-70">
           {
             links.map(({ name, url }) => (
               <li class="mb-6 sm:mb-4">

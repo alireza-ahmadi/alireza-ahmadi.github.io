@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mono: ['Spline Sans Mono', 'ui-monospace', 'SFMono-Regular'],
+        mono: ['Space Mono', 'ui-monospace', 'SFMono-Regular'],
       },
     },
   },
