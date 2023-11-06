@@ -107,7 +107,10 @@ const links = [
           {
             links.map(({ name, url }) => (
               <li class="mb-6 sm:mb-4">
-                <a class="border-b-2 pb-1" href={url}>
+                <a
+                  class="border-b-2 pb-1 bg-black active:bg-white active:text-black active:pl-4 transition-all"
+                  href={url}
+                >
                   {name}
                 </a>
               </li>
