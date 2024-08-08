@@ -1,124 +1,129 @@
 ---
-import '@fontsource/space-mono/400.css';
+import IntroLink from '../components/intro-link.astro';
+import ContainerLayout from '../layouts/container-layout.astro';
+import { SEO } from 'astro-seo';
 
-const links = [
-  {
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/alirezaahmadi/',
-  },
-  {
-    name: 'X, formerly Twitter',
-    url: 'https://x.com/alireza94',
-  },
-  {
-    name: 'GitHub',
-    url: 'https://github.com/alireza-ahmadi',
-  },
-  {
-    name: 'StackOverflow',
-    url: 'https://stackoverflow.com/users/2503246/alireza-ahmadi',
-  },
-  {
-    name: 'Email',
-    url: 'mailto:me@alireza.es',
-  },
-];
+import { format } from 'date-fns';
+import { getCollection } from 'astro:content';
+
+const notes = (
+  await getCollection('note', ({ data }) => {
+    return data.isDraft !== true;
+  })
+).sort((a, b) => {
+  return b.data.publishDate.getTime() - a.data.publishDate.getTime();
+});
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta name="generator" content={Astro.generator} />
-    <title>Alireza Ahmadi</title>
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/android-icon-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#000000" />
-    <!-- Opengraph -->
-    <meta http-equiv="Content-Language" content="en" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:creator" content="@alireza94" />
-
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image" content="https://alireza.es/og.png" />
-    <meta property="og:image:alt" content="Alireza Ahmadi" />
-    <meta property="og:site_name" content="alireza.es" />
-    <meta property="og:title" content="Alireza Ahmadi" />
-    <meta property="og:description" content="Just a tiny personal website" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://alireza.es" />
-  </head>
-  <body class="bg-black text-white selection:bg-white selection:text-black">
-    <main
-      class="font-mono w-full box-border p-8 sm:max-w-xl md:p-16 [font-variant-ligatures:none]"
+<ContainerLayout>
+  <SEO
+    slot="head"
+    title="alireza ahmadi"
+    description="the personal website of alireza ahmadi"
+    openGraph={{
+      basic: {
+        title: 'alireza ahmadi',
+        type: 'website',
+        image: 'https://alireza.es/og.png',
+        url: 'https://alireza.es',
+      },
+    }}
+    twitter={{
+      creator: '@alireza94',
+    }}
+    extend={{
+      meta: [
+        {
+          name: 'twitter:image',
+          content: 'https://alireza.es/og.png',
+        },
+        { name: 'twitter:title', content: 'alireza ahmadi' },
+        {
+          name: 'twitter:image:alt',
+          content: 'alireza ahmadi',
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          name: 'twitter:description',
+          content: 'the personal website of alireza ahmadi',
+        },
+      ],
+    }}
+  />
+  <section>
+    <p
+      class="text-normal font-normal font-body leading-relaxed sm:text-lg mb-4 text-balance"
     >
+      Hi, I'm a consultant with
+      <IntroLink
+        href="https://github.com/alireza-ahmadi"
+        caption="GitHub"
+        captionRotation={-1}>software</IntroLink
+      >
+      <IntroLink
+        href="https://stackoverflow.com/users/2503246/alireza-ahmadi"
+        caption="StackOverflow"
+        captionRotation={1}
+      >
+        engineering
+      </IntroLink> background. I help companies leverage the tech to achieve their
+      primary objectives.
+    </p>
+    <div
+      class="text-normal font-normal leading-relaxed sm:text-lg mb-14 flex flex-row gap-3 sm:gap-4"
+    >
+      <IntroLink
+        href="https://x.com/alireza94"
+        caption="alireza94"
+        captionRotation={2}>X.com</IntroLink
+      >
+      <IntroLink
+        href="https://www.linkedin.com/in/alirezaahmadi/"
+        caption="alirezaahmadi"
+        captionRotation={-1}>LinkedIn</IntroLink
+      >
+      <IntroLink
+        caption="wojiaoalireza"
+        href="https://t.me/wojiaoalireza"
+        captionRotation={-2}>Telegram</IntroLink
+      >
+      <IntroLink
+        caption="me@alireza.es"
+        href="mailto:me@alireza.es"
+        captionRotation={1}>Mail</IntroLink
+      >
+    </div>
+  </section>
+  {
+    notes.length > 0 && (
       <section>
-        <h1 class="font-normal text-normal mb-10 sm:text-lg">Alireza Ahmadi</h1>
-        <p
-          class="text-normal font-normal leading-loose sm:leading-loose sm:text-lg mb-10 [text-wrap:balance]"
-        >
-          I'm a consultant with software engineering background. I help
-          companies leverage the tech to achieve their primary objectives.
-        </p>
-        <ul class="text-normal font-normal opacity-70">
-          {
-            links.map(({ name, url }) => (
-              <li class="mb-6 sm:mb-4">
-                <a
-                  class="border-b-2 pb-1 bg-black active:bg-white active:text-black active:pl-4 transition-all"
-                  href={url}
-                  target="_blank"
-                >
-                  {name}
-                </a>
-              </li>
-            ))
-          }
+        <h2 class="font-semibold !text-2xl mb-2 sm:text-lg font-heading">
+          Notes
+        </h2>
+        <ul class="font-body">
+          {notes.map((note) => (
+            <li class="flex flex-col justify-start items-start gap-1 py-2">
+              <a
+                href={`/notes/${note.slug}`}
+                class="font-normal text-lg flex-grow-0 flex-shrink-0 underline decoration-2 underline-offset-1 hover:text-thistle-700"
+                transition:name={`title-${note.slug}`}
+              >
+                {note.data.title}
+              </a>
+              <div class="flex flex-row justify-stretch items-center gap-3 sm:gap-4 w-full">
+                {/* <span class="after:border-bay-of-many-950/30 after:border-t-2 relative after:absolute after:w-full after:left-0 after:top-1/2 after:box-border after:-translate-y-1/2 h-1 after:border-dashed flex-grow block" /> */}
+
+                <span class="flex-grow-0 flex-shrink-0 text-sm font-semibold flex items-center gap-1">
+                  {format(note.data.publishDate, 'yyyy-MM-dd')}
+                </span>
+              </div>
+            </li>
+          ))}
         </ul>
       </section>
-    </main>
-  </body>
-</html>
+    )
+  }
+</ContainerLayout>
