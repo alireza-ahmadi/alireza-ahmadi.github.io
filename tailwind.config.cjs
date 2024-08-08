@@ -42,7 +42,6 @@ module.exports = {
           },
           ...defaultSans,
         ],
-        mono: ['Space Mono', 'ui-monospace', 'SFMono-Regular'],
       },
       colors: {
         // color pallete from #ECF4F4, #DEC4E2, #54B4EA, #0363BB, #023785

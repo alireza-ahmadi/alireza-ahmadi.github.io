@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
-    "@fontsource/space-mono": "^5.0.17",
     "@tailwindcss/typography": "^0.5.14",
     "astro": "^4.13.1",
     "astro-seo": "^0.8.4",
