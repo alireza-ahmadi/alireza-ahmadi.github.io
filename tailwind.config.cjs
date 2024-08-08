@@ -47,7 +47,7 @@ module.exports = {
         // color pallete from #ECF4F4, #DEC4E2, #54B4EA, #0363BB, #023785
         'aqua-haze': {
           50: '#f5fafa',
-          100: '#ecf4f4', // base
+          100: '#ecf4f4',
           200: '#d2e5e4',
           300: '#aacfcc',
           400: '#7db3ad',
