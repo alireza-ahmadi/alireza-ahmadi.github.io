@@ -90,13 +90,27 @@ const links = [
     <meta property="og:description" content="Just a tiny personal website" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://alireza.es" />
+    <!-- Load Inter font family -->
+    <style is:global>
+      @font-face {
+        font-family: 'Inter Variable';
+        font-display: swap;
+        font-weight: 100 900;
+        src: url(/fonts/inter-variable.woff2) format('woff2-variations');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
   </head>
   <body class="bg-black text-white selection:bg-white selection:text-black">
     <main
-      class="font-mono w-full box-border p-8 sm:max-w-xl md:p-16 [font-variant-ligatures:none]"
+      class="font-body w-full box-border p-8 sm:max-w-xl md:p-16 antialiased"
     >
       <section>
-        <h1 class="font-normal text-normal mb-10 sm:text-lg">Alireza Ahmadi</h1>
+        <h1 class="font-medium !text-5xl mb-10 sm:text-lg font-heading">
+          Alireza Ahmadi
+        </h1>
         <p
           class="text-normal font-normal leading-loose sm:leading-loose sm:text-lg mb-10 [text-wrap:balance]"
         >
