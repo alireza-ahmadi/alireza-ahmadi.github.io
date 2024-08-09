@@ -90,7 +90,10 @@ const { isInternalPage = false } = Astro.props;
     <main
       class="font-body w-full box-border p-6 sm:max-w-xl md:py-16 antialiased mx-auto"
     >
-      <a href="/" class="transform block active:scale-90 transition-all">
+      <a
+        href="/"
+        class="transform block active:scale-90 transition-all origin-left"
+      >
         <h1
           class:list={[
             'font-medium mb-4 font-heading flex items-center gap-3 select-none',
@@ -99,7 +102,6 @@ const { isInternalPage = false } = Astro.props;
               'text-2xl': isInternalPage,
             },
           ]}
-          transition:name="logo"
         >
           <span
             transition:name="back-to-homepage"
@@ -107,7 +109,7 @@ const { isInternalPage = false } = Astro.props;
             class="bg-thistle-300 text-thistle-900 text-base font-bold px-2 py-1.5 rounded-xl"
             transition:name="go-to-homepage">{'<-'} Home</span
           >
-          Alireza Ahmadi
+          <span transition:name="logo">Alireza Ahmadi</span>
         </h1>
       </a>
       <slot />
