@@ -120,12 +120,7 @@ const notes = (
                 <span class="flex-grow-0 flex-shrink-0 text-sm font-semibold flex items-center gap-1">
                   {format(note.data.publishDate, 'yyyy-MMM-dd')}
                   {differenceInWeeks(new Date(), note.data.publishDate) <=
-                    4 && (
-                    <RecentlyPublished
-                      date={note.data.publishDate}
-                      client:idle
-                    />
-                  )}
+                    4 && <RecentlyPublished date={note.data.publishDate} />}
                 </span>
               </div>
             </li>
