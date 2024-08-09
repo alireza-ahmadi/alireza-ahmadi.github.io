@@ -17,6 +17,7 @@ const { isInternalPage = false } = Astro.props;
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta name="generator" content={Astro.generator} />
+    <!-- Preload The Web Font -->
     <link
       rel="preload"
       href="/fonts/inter-variable.woff2"
@@ -24,6 +25,8 @@ const { isInternalPage = false } = Astro.props;
       type="font/woff2"
       crossorigin
     />
+    <!-- Sitemap Hint -->
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
