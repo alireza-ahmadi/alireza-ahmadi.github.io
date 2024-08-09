@@ -17,6 +17,13 @@ const { isInternalPage = false } = Astro.props;
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta name="generator" content={Astro.generator} />
+    <link
+      rel="preload"
+      href="/fonts/inter-variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -66,7 +73,7 @@ const { isInternalPage = false } = Astro.props;
         src: url(/fonts/inter-variable.woff2) format('woff2-variations');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
           U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
-          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+21A9;
       }
     </style>
     <meta http-equiv="Content-Language" content="en" />

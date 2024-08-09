@@ -9,7 +9,7 @@ const datePublishedEpoch = date.getTime();
 ---
 
 <recently-published
-  class="px-1.5 py-1 font-medium text-thistle-800"
+  class="px-1.5 font-medium text-thistle-800"
   data-date-publish={datePublishedEpoch}></recently-published>
 
 <script>
@@ -19,7 +19,7 @@ const datePublishedEpoch = date.getTime();
    * @param {number} date
    * @returns {string | null}
    */
-  function generateLabel(epochDate) {
+  function generateLabel(epochDate: number) {
     if (Intl.RelativeTimeFormat === undefined) {
       return null;
     }
