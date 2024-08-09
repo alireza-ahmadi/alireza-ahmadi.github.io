@@ -111,6 +111,7 @@ const notes = (
                 href={`/notes/${note.slug}`}
                 class="font-normal text-lg flex-grow-0 flex-shrink-0 underline decoration-2 underline-offset-1 hover:text-thistle-700"
                 transition:name={`title-${note.slug}`}
+                data-astro-prefetch
               >
                 {note.data.title}
               </a>
