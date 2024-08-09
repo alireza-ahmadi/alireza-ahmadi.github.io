@@ -3,8 +3,9 @@ import IntroLink from '../components/intro-link.astro';
 import ContainerLayout from '../layouts/container-layout.astro';
 import { SEO } from 'astro-seo';
 
-import { format } from 'date-fns';
+import { format, differenceInWeeks } from 'date-fns';
 import { getCollection } from 'astro:content';
+import RecentlyPublished from '../components/recently-published.astro';
 
 const notes = (
   await getCollection('note', ({ data }) => {
@@ -115,9 +116,15 @@ const notes = (
               </a>
               <div class="flex flex-row justify-stretch items-center gap-3 sm:gap-4 w-full">
                 {/* <span class="after:border-bay-of-many-950/30 after:border-t-2 relative after:absolute after:w-full after:left-0 after:top-1/2 after:box-border after:-translate-y-1/2 h-1 after:border-dashed flex-grow block" /> */}
-
                 <span class="flex-grow-0 flex-shrink-0 text-sm font-semibold flex items-center gap-1">
-                  {format(note.data.publishDate, 'yyyy-MM-dd')}
+                  {format(note.data.publishDate, 'yyyy-MMM-dd')}
+                  {differenceInWeeks(new Date(), note.data.publishDate) <=
+                    4 && (
+                    <RecentlyPublished
+                      date={note.data.publishDate}
+                      client:idle
+                    />
+                  )}
                 </span>
               </div>
             </li>
