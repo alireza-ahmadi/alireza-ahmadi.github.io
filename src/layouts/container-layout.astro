@@ -93,7 +93,7 @@ const { isInternalPage = false } = Astro.props;
       <a href="/" class="transform block active:scale-90 transition-all">
         <h1
           class:list={[
-            'font-medium mb-4 font-heading flex items-center gap-3',
+            'font-medium mb-4 font-heading flex items-center gap-3 select-none',
             {
               'text-3xl': !isInternalPage,
               'text-2xl': isInternalPage,
@@ -102,6 +102,7 @@ const { isInternalPage = false } = Astro.props;
           transition:name="logo"
         >
           <span
+            transition:name="back-to-homepage"
             hidden={!isInternalPage}
             class="bg-thistle-300 text-thistle-900 text-base font-bold px-2 py-1.5 rounded-xl"
             transition:name="go-to-homepage">{'<-'} Home</span

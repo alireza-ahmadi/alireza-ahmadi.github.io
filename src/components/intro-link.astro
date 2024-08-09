@@ -10,7 +10,7 @@ const { href, caption, captionRotation = 0 } = Astro.props;
 
 <a
   class:list={[
-    'font-medium relative cursor-pointer underline underline-offset-4 decoration-2',
+    'font-medium relative cursor-pointer underline underline-offset-4 decoration-2 select-none',
     `after:content-[attr(data-caption)]`,
     'after:absolute after:px-2 after:py-1 after:left-1/2 after:top-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2',
     'after:opacity-0 after:transition-all after:rounded-lg after:cursor-pointer',
