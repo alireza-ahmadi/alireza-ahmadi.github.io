@@ -2,7 +2,7 @@
 title: 'On Turning 30'
 shortDesc: 'A reflection on my 30th birthday.'
 publishDate: 2024-08-09
-isDraft: false
+isDraft: true
 ---
 
 A few weeks ago was my thirtieth birthday. That day was non-stop party, endless fun, and unforgettable gifts and memories …. _just kidding_. I didn’t celebrate my birthday at all. That day, after a few hours of remote work, in a city far from practically everyone I know, I went to a burger-shop, hoping having a burger would improve my mood (_spoiler: it didn’t, though the burger was amazing_) and then, wandered around the streets **long enough to question every single decision that I’ve made in the last few years**.
