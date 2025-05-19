@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@config '../../tailwind.config.cjs';
+
+@theme {
+  --font-body: 'Inter Variable', sans-serif;
+  --font-body--font-feature-settings: 'ss01', 'ss02', 'ss07';
+  --font-body--font-variation-settings: 'opsz' 14;
+  --font-heading: 'Inter Variable', sans-serif;
+  --font-heading--font-feature-settings: 'ss01', 'ss02', 'ss07', 'cv10', 'cv11';
+  --font-heading--font-variation-settings: 'opsz' 32;
+}

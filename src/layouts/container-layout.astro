@@ -1,5 +1,6 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
+import '../styles/global.css';
 
 interface Props {
   isInternalPage?: boolean;
@@ -81,7 +82,7 @@ const { isInternalPage = false } = Astro.props;
     </style>
     <meta http-equiv="Content-Language" content="en" />
     <slot name="head" />
-    <ViewTransitions />
+    <ClientRouter />
   </head>
 
   <body

@@ -101,7 +101,7 @@ const notes = (
   {
     notes.length > 0 && (
       <section>
-        <h2 class="font-semibold !text-2xl mb-2 sm:text-lg font-heading">
+        <h2 class="font-semibold text-2xl! mb-2 sm:text-lg font-heading">
           Notes
         </h2>
         <ul class="font-body">
@@ -109,15 +109,15 @@ const notes = (
             <li class="flex flex-col justify-start items-start gap-1 py-2">
               <a
                 href={`/notes/${note.slug}`}
-                class="font-normal text-lg flex-grow-0 flex-shrink-0 underline decoration-2 underline-offset-1 hover:text-thistle-700 leading-7"
+                class="font-normal text-lg grow-0 shrink-0 underline decoration-2 underline-offset-1 hover:text-thistle-700 leading-7"
                 transition:name={`title-${note.slug}`}
                 data-astro-prefetch
               >
                 {note.data.title}
               </a>
               <div class="flex flex-row justify-stretch items-center gap-3 sm:gap-4 w-full">
-                {/* <span class="after:border-bay-of-many-950/30 after:border-t-2 relative after:absolute after:w-full after:left-0 after:top-1/2 after:box-border after:-translate-y-1/2 h-1 after:border-dashed flex-grow block" /> */}
-                <span class="flex-grow-0 flex-shrink-0 text-sm font-semibold flex items-center gap-1">
+                {/* <span class="after:border-bay-of-many-950/30 after:border-t-2 relative after:absolute after:w-full after:left-0 after:top-1/2 after:box-border after:-translate-y-1/2 h-1 after:border-dashed grow block" /> */}
+                <span class="grow-0 shrink-0 text-sm font-semibold flex items-center gap-1">
                   {format(note.data.publishDate, 'yyyy-MMM-dd')}
                   {differenceInWeeks(new Date(), note.data.publishDate) <=
                     4 && <RecentlyPublished date={note.data.publishDate} />}
