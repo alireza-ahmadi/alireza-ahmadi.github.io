@@ -17,6 +17,7 @@ const { isInternalPage = false } = Astro.props;
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"
     />
+    <ClientRouter />
     <meta name="generator" content={Astro.generator} />
     <!-- Preload The Web Font -->
     <link
@@ -82,7 +83,6 @@ const { isInternalPage = false } = Astro.props;
     </style>
     <meta http-equiv="Content-Language" content="en" />
     <slot name="head" />
-    <ClientRouter />
   </head>
 
   <body
