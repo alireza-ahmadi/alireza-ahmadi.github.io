@@ -26,7 +26,7 @@ and it's unbelievable how this subtle change of perspective led me to rethink my
 
 i previously **expected** that an **increased chance of death** would make me more afraid of it; but it didn't. i rarely thought
 about death in the past day or so. i had no stress yesterday, didn't feel the need to constantly check the news, felt upbeat enough to make
-[hotdog for dinner](https://alireza.es/favorite-hotdog), and slept well last night (_even though you could constantly hear the sound of explosions throughout the night_).
+[hotdog for dinner](https://alireza.es/notes/favorite-hotdog), and slept well last night (_even though you could constantly hear the sound of explosions throughout the night_).
 
 **what changed** though, **was the way that i weigh my actions**. the combination of _"death being the most permanent event"_ and _"there
 is a higher than average chance that i die right now"_, makes you rethink your priorities.
