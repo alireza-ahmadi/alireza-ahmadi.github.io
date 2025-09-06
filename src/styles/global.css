@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
-@config '../../tailwind.config.cjs';
 
 @theme {
   --font-body: 'Inter Variable', sans-serif;
@@ -9,4 +8,122 @@
   --font-heading: 'Inter Variable', sans-serif;
   --font-heading--font-feature-settings: 'ss01', 'ss02', 'ss07', 'cv10', 'cv11';
   --font-heading--font-variation-settings: 'opsz' 32;
+
+  --color-tundora-50: #f5f5f6;
+  --color-tundora-100: #e6e6e7;
+  --color-tundora-200: #d0d0d1;
+  --color-tundora-300: #b0aeb2;
+  --color-tundora-400: #87868a;
+  --color-tundora-500: #6c6b6f;
+  --color-tundora-600: #5d5b5f;
+  --color-tundora-700: #4f4e50;
+  --color-tundora-800: #434244;
+  --color-tundora-900: #3c3c3d;
+  --color-tundora-950: #272527;
+
+  --color-crimson-50: #fff0f2;
+  --color-crimson-100: #ffe3e4;
+  --color-crimson-200: #ffcbd1;
+  --color-crimson-300: #ffa0aa;
+  --color-crimson-400: #ff6b7e;
+  --color-crimson-500: #fb3855;
+  --color-crimson-600: #dc143c;
+  --color-crimson-700: #c50b34;
+  --color-crimson-800: #a50c33;
+  --color-crimson-900: #8d0e33;
+  --color-crimson-950: #4f0217;
+
+	--radius-5xl: 2.5rem;
+	--radius-6xl: 3rem;
+	--radius-7xl: 3.5rem;
+	--radius-8xl: 4rem;
+}
+
+@layer base {
+	* {
+		@apply antialiased;
+	}
+
+	@supports (corner-shape: squircle) {
+		.rounded-sm {
+			corner-shape: squircle;
+			border-radius: var(--radius-lg) !important;
+		}
+		.after\:rounded-sm {
+			&::after {
+				corner-shape: squircle;
+				border-radius: var(--radius-lg) !important;
+			}
+		}
+		.rounded-md {
+			corner-shape: squircle;
+			border-radius: var(--radius-xl) !important;
+		}
+		.after\:rounded-md {
+			&::after {
+				corner-shape: squircle;
+				border-radius: var(--radius-xl) !important;
+			}
+		}
+		.rounded {
+			corner-shape: squircle;
+			border-radius: var(--radius-2xl) !important;
+		}
+		.after\:rounded {
+			&::after {
+				corner-shape: squircle;
+				border-radius: var(--radius-2xl) !important;
+			}
+		}
+		.rounded-lg {
+			corner-shape: squircle;
+			border-radius: var(--radius-3xl) !important;
+		}
+		.after\:rounded-lg {
+			&::after {
+				corner-shape: squircle;
+				border-radius: var(--radius-3xl) !important;
+			}
+		}
+		.rounded-xl {
+			corner-shape: squircle;
+			border-radius: var(--radius-4xl) !important;
+		}
+		.after\:rounded-xl {
+			&::after {
+				corner-shape: squircle;
+				border-radius: var(--radius-4xl) !important;
+			}
+		}
+		.rounded-2xl {
+			corner-shape: squircle;
+			border-radius: var(--radius-5xl) !important;
+		}
+		.after\:rounded-2xl {
+			&::after {
+				corner-shape: squircle;
+				border-radius: var(--radius-5xl) !important;
+			}
+		}
+		.rounded-3xl {
+			corner-shape: squircle;
+			border-radius: var(--radius-6xl) !important;
+		}
+		.after\:rounded-3xl {
+			&::after {
+				corner-shape: squircle;
+				border-radius: var(--radius-6xl) !important;
+			}
+		}
+		.rounded-4xl {
+			corner-shape: squircle;
+			border-radius: var(--radius-7xl) !important;
+		}
+		.after\:rounded-4xl {
+			&::after {
+				corner-shape: squircle;
+				border-radius: var(--radius-7xl) !important;
+			}
+		}
+	}
 }

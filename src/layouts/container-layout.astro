@@ -86,14 +86,21 @@ const { isInternalPage = false } = Astro.props;
   </head>
 
   <body
-    class="bg-aqua-haze-100 text-bay-of-many-950 selection:bg-thistle-900 selection:text-thistle-200 text-body lowercase min-h-screen"
+    class="text-tundora-950 bg-white selection:bg-crimson-900 selection:text-crimson-200 text-body lowercase min-h-screen"
   >
     <main
       class="font-body w-full box-border p-6 sm:max-w-xl md:py-16 antialiased mx-auto"
     >
       <a
         href="/"
-        class="transform block active:scale-90 transition-all origin-left"
+        class:list={[
+          'transform block active:scale-90 transition-all origin-left relative',
+          "before:content-[''] before:absolute before:bg-white/10 before:left-0 before:top-1/2",
+          'before:rounded-full before:size-20 before:-translate-y-1/2 before:-translate-x-1/2',
+          'before:transition-all before:ease-in-out before:duration-300 before:backdrop-blur-sm',
+          'before:bg-white !z-50',
+          'before:opacity-0 active:before:opacity-100 active:before:scale-125 before:-z-10 active:before:size-[3000px] after:duration-100',
+        ]}
       >
         <h1
           class:list={[
@@ -107,15 +114,15 @@ const { isInternalPage = false } = Astro.props;
           <span
             transition:name="back-to-homepage"
             hidden={!isInternalPage}
-            class="bg-thistle-300 text-thistle-900 text-base font-bold px-2 py-1.5 rounded-xl"
-            transition:name="go-to-homepage">{'<-'} Home</span
+            class="bg-white text-crimson-700 border border-white text-base font-bold pl-0 pr-2 py-1.5 rounded-xl"
+            transition:name="go-to-homepage">{'←'} Home</span
           >
           <span transition:name="logo">Alireza Ahmadi</span>
         </h1>
       </a>
       <slot />
       <footer>
-        <p class="text-sm text-bay-of-many-950 mt-16 py-8">
+        <p class="text-sm text-tundora-950 mt-16 py-8">
           &copy; {new Date().getFullYear()} Some rights reserved.
         </p>
       </footer>
