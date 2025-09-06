@@ -94,12 +94,7 @@ const { isInternalPage = false } = Astro.props;
       <a
         href="/"
         class:list={[
-          'transform block active:scale-90 transition-all origin-left relative',
-          "before:content-[''] before:absolute before:bg-white/10 before:left-0 before:top-1/2",
-          'before:rounded-full before:size-20 before:-translate-y-1/2 before:-translate-x-1/2',
-          'before:transition-all before:ease-in-out before:duration-300 before:backdrop-blur-sm',
-          'before:bg-white !z-50',
-          'before:opacity-0 active:before:opacity-100 active:before:scale-125 before:-z-10 active:before:size-[3000px] after:duration-100',
+          'transform block active:-translate-x-6 transition-all origin-left relative hover:-translate-x-3',
         ]}
       >
         <h1
@@ -115,7 +110,7 @@ const { isInternalPage = false } = Astro.props;
             transition:name="back-to-homepage"
             hidden={!isInternalPage}
             class="bg-white text-crimson-700 border border-white text-base font-bold pl-0 pr-2 py-1.5 rounded-xl"
-            transition:name="go-to-homepage">{'←'} Home</span
+            transition:name="go-to-homepage">{'<-'} Home</span
           >
           <span transition:name="logo">Alireza Ahmadi</span>
         </h1>
