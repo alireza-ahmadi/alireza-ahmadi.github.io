@@ -1,6 +1,6 @@
 ---
 title: 'death, hesitance, and more'
-shortDesc: 'how thinking about death can make change the way you think'
+shortDesc: 'how thinking about death can change the way you think'
 publishDate: 2025-06-14 19:00:00+03:30
 isDraft: false
 ---
@@ -55,6 +55,7 @@ foolish behavior**. you might die now or in hundred years, it doesn't make a dif
 if you lack the courage to act**. even making a seemingly wrong move might lead to a better outcome than getting stuck in the same place.
 
 [^1]: of course living that long isn't possible _now_, but who knows how technology will evolve in the future.
+
 [^2]:
     _yes, yes,_ i definitly can't achieve the desired outcome in **all** cases but **even in scenarios where i failed, i had the
     choice** (_regardless i made the best choice or not_).
