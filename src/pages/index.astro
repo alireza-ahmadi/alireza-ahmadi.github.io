@@ -60,14 +60,16 @@ const notes = (
     >
       Hi, I'm a consultant with
 
-      <span class="font-medium">software engineering</span> background. I help companies leverage the tech to achieve their
-      primary objectives.
+      <span class="font-medium">software engineering</span> background. I help companies
+      leverage the tech to achieve their primary objectives.
     </p>
     <div
       class="text-normal font-normal leading-relaxed sm:text-lg mb-14 flex flex-row gap-3 sm:gap-4"
     >
       <IntroLink href="https://x.com/alireza94">X.com</IntroLink>
-      <IntroLink href="https://www.linkedin.com/in/alirezaahmadi/">LinkedIn</IntroLink>
+      <IntroLink href="https://www.linkedin.com/in/alirezaahmadi/"
+        >LinkedIn</IntroLink
+      >
       <IntroLink href="https://github.com/alireza-ahmadi">GitHub</IntroLink>
       <IntroLink href="mailto:me@alireza.es">Mail</IntroLink>
     </div>
@@ -82,9 +84,10 @@ const notes = (
           {notes.map((note) => (
             <li class="flex flex-col justify-start items-start gap-1 py-2">
               <a
-                href={`/notes/${note.slug}`}
+                href={`/notes/${note.id}`}
                 class="font-normal text-lg grow-0 shrink-0 underline decoration-2 underline-offset-1 hover:text-crimson-700 leading-7"
-                transition:name={`title-${note.slug}`}
+                transition:name={`title-${note.id}`}
+                transition:persist
                 data-astro-prefetch
               >
                 {note.data.title}

@@ -3,6 +3,7 @@ import { SEO } from 'astro-seo';
 import type { CollectionEntry } from 'astro:content';
 import ContainerLayout from '../../layouts/container-layout.astro';
 import { getCollection } from 'astro:content';
+import { render } from 'astro:content';
 
 interface Props {
   entry: CollectionEntry<'note'>;
@@ -11,21 +12,21 @@ interface Props {
 export async function getStaticPaths() {
   const noteEntries = await getCollection('note');
   return noteEntries.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 const metaData = {
   title: `${entry.data.title.toLowerCase()} | alireza ahmadi`,
-  ogImage: `https://alireza.es/opengraph/${entry.slug}.png`,
+  ogImage: `https://alireza.es/opengraph/${entry.id}.png`,
   description: entry.data.shortDesc
     ? entry.data.shortDesc
     : `the personal website of alireza ahmadi`,
-  url: `https://alireza.es/notes/${entry.slug}`,
+  url: `https://alireza.es/notes/${entry.id}`,
 };
 ---
 
@@ -67,7 +68,7 @@ const metaData = {
       ],
     }}
   />
-  <a href={`/notes/${entry.slug}`} transition:name={`title-${entry.slug}`}
+  <a href={`/notes/${entry.id}`} transition:name={`title-${entry.id}`}
     ><h2
       class="font-semibold font-heading text-4xl mt-10 mb-10 underline decoration-4 underline-offset-4 text-balance"
     >
